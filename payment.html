@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <form action="" onsubmit="myFunc()">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">billing Address</h3>
+                    <div class="input-box">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Daniel felicilda">
+                    </div>
+                     <div class="input-box">
+                        <span>Email :</span>
+                        <input type="email" placeholder="example@example.com">
+                     </div>
+                     <div class="input-box">
+                        <span>Address :</span>
+                        <input type="text" placeholder="Room - Street - locality">
+                     </div>
+                     <div class="input-box">
+                        <span>City :</span>
+                        <input type="text" placeholder="Butuan">
+                     </div>
+
+                     <div class="flex">
+                        <div class="input-box">
+                            <span>State :</span>
+                            <input type="text" placeholder="Philippines">
+                        </div>
+                        <div class="input-box">
+                            <span>Zip Code :</span>
+                            <input type="number" placeholder="112 133">
+                         </div>
+                     </div>
+                </div>
+
+                <div class="column">
+                   <h3 class="title">Payment</h3> 
+                   <div class="input-box">
+                      <span>Cards Accepted : </span>
+                      <img src="images/credits.png" alt="">
+                </div>
+                <div class="input-box">
+                    <span>Name On Cards :</span>
+                    <input type="text" placeholder="Mr.Daniel felicilda">
+                </div>
+                <div class="input-box">
+                    <span>Credit Card Number :</span>
+                    <input type="text" placeholder="1111 2222 3333 4444">
+                 </div>
+                 <div class="input-box">
+                    <span>Exp Month  :</span>
+                    <input type="text" placeholder="August">
+                 </div>
+                    
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Epx Year :</span>
+                            <input type="number" placeholder="2025">
+                        </div>
+                        <div class="input-box">
+                            <span>CW :</span>
+                            <input type="number" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                   <div class="popup" id="popup">
+                     <img src="images/check.png" alt="">
+                      <h2>Thank you</h2>
+                       <p>Your Details has been Succesfully Submitted.Thanks!</p>
+                       <button type="button" onclick="closePopup()">OK</button>
+                    </div>
+                   <button type="submit" class="btn"><a href="home.html"> Back To Home</a></button>
+        </form>
+    </div>
+
+    
+    
+    <script src="popup.js"></script>
+
+</body>
+</html>
